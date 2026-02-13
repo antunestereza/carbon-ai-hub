@@ -184,7 +184,7 @@ export function UIAuditUpload() {
                 type="file"
                 accept="image/*"
                 onChange={handleFileInput}
-                className="hidden"
+                style={{ display: 'none' }}
               />
               <button
                 onClick={() => fileInputRef.current?.click()}
