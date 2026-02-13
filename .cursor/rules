@@ -1,0 +1,17 @@
+# Code Style
+- Always shorten and simplify
+- Prefer editing existing files over creating new ones
+- No over-engineering or premature abstractions
+- Avoid unnecessary comments - code should be self-documenting
+
+# Tech Stack
+- Use Carbon Design System components, avoid custom UI
+- Follow Next.js App Router conventions
+- Keep TypeScript types minimal - prefer inference
+- Use SASS for styling, following Carbon patterns
+
+# Avoid
+- Creating new files unless absolutely necessary
+- Adding error handling for impossible cases
+- Feature flags or backwards-compatibility shims
+- Excessive type annotations when inference works

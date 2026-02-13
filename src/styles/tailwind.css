@@ -1,0 +1,4 @@
+/* Tailwind entrypoint (compatible with standard PostCSS parsing) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

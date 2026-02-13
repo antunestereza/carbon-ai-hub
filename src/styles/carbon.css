@@ -1,0 +1,124 @@
+/* IBM Carbon Design System v11 Theme Variables */
+:root {
+  /* Carbon White Theme */
+  --carbon-bg-primary: #ffffff;
+  --carbon-bg-secondary: #f4f4f4;
+  --carbon-bg-hover: #e8e8e8;
+  --carbon-bg-active: #c6c6c6;
+  --carbon-text-primary: #161616;
+  --carbon-text-secondary: #525252;
+  --carbon-text-placeholder: #a8a8a8;
+  --carbon-text-on-color: #ffffff;
+  --carbon-border-subtle: #e0e0e0;
+  --carbon-border-strong: #8d8d8d;
+  --carbon-interactive: #0f62fe;
+  --carbon-interactive-hover: #0353e9;
+  --carbon-focus: #0f62fe;
+  --carbon-layer-01: #f4f4f4;
+  --carbon-layer-02: #ffffff;
+  --carbon-field: #f4f4f4;
+  
+  /* Carbon Spacing (8px mini-unit) */
+  --carbon-spacing-01: 2px;
+  --carbon-spacing-02: 4px;
+  --carbon-spacing-03: 8px;
+  --carbon-spacing-04: 12px;
+  --carbon-spacing-05: 16px;
+  --carbon-spacing-06: 24px;
+  --carbon-spacing-07: 32px;
+  --carbon-spacing-08: 40px;
+  --carbon-spacing-09: 48px;
+  --carbon-spacing-10: 64px;
+  --carbon-spacing-11: 80px;
+  --carbon-spacing-12: 96px;
+  
+  /* Carbon Typography */
+  --carbon-font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --carbon-font-mono: 'IBM Plex Mono', 'Menlo', 'Monaco', 'Courier New', monospace;
+  
+  /* Carbon Border Radius (Square - 0px) */
+  --carbon-radius: 0px;
+}
+
+.dark {
+  /* Carbon Gray 100 (Dark) Theme */
+  --carbon-bg-primary: #161616;
+  --carbon-bg-secondary: #262626;
+  --carbon-bg-hover: #333333;
+  --carbon-bg-active: #525252;
+  --carbon-text-primary: #f4f4f4;
+  --carbon-text-secondary: #c6c6c6;
+  --carbon-text-placeholder: #6f6f6f;
+  --carbon-text-on-color: #ffffff;
+  --carbon-border-subtle: #393939;
+  --carbon-border-strong: #6f6f6f;
+  --carbon-interactive: #0f62fe;
+  --carbon-interactive-hover: #0353e9;
+  --carbon-focus: #0f62fe;
+  --carbon-layer-01: #262626;
+  --carbon-layer-02: #161616;
+  --carbon-field: #262626;
+}
+
+/* Apply Carbon styles globally */
+body {
+  font-family: var(--carbon-font-family);
+  background: var(--carbon-bg-primary);
+  color: var(--carbon-text-primary);
+}
+
+/* Carbon button reset */
+.carbon-btn {
+  border-radius: var(--carbon-radius);
+  border: 1px solid transparent;
+  padding: var(--carbon-spacing-03) var(--carbon-spacing-05);
+  font-family: var(--carbon-font-family);
+  transition: all 0.11s cubic-bezier(0.2, 0, 0.38, 0.9);
+}
+
+.carbon-btn-primary {
+  background: var(--carbon-interactive);
+  color: var(--carbon-text-on-color);
+  border-color: var(--carbon-interactive);
+}
+
+.carbon-btn-primary:hover {
+  background: var(--carbon-interactive-hover);
+  border-color: var(--carbon-interactive-hover);
+}
+
+.carbon-btn-secondary {
+  background: var(--carbon-bg-secondary);
+  color: var(--carbon-text-primary);
+  border-color: var(--carbon-border-subtle);
+}
+
+.carbon-btn-secondary:hover {
+  background: var(--carbon-bg-hover);
+}
+
+/* Carbon input fields */
+.carbon-input {
+  background: var(--carbon-field);
+  border: none;
+  border-bottom: 1px solid var(--carbon-border-strong);
+  border-radius: var(--carbon-radius);
+  padding: var(--carbon-spacing-05);
+  color: var(--carbon-text-primary);
+  font-family: var(--carbon-font-family);
+  outline: none;
+  transition: all 0.11s cubic-bezier(0.2, 0, 0.38, 0.9);
+}
+
+.carbon-input:focus {
+  outline: 2px solid var(--carbon-focus);
+  outline-offset: -2px;
+}
+
+/* Carbon cards */
+.carbon-card {
+  background: var(--carbon-layer-01);
+  border: 1px solid var(--carbon-border-subtle);
+  border-radius: var(--carbon-radius);
+  padding: var(--carbon-spacing-05);
+}

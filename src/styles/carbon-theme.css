@@ -1,0 +1,36 @@
+/* IBM Carbon Design System v11 Theme Variables */
+
+:root {
+  /* Carbon theme uses design-tokens (semantic colours from JSON); overrides in globals.scss */
+  --carbon-font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  --carbon-radius: 0px;
+}
+
+/* Gray 100 theme – uses semantic tokens */
+.gray-theme {
+  --carbon-bg-primary: var(--semantic-surface-neutral-lighter);
+  --carbon-bg-secondary: var(--semantic-surface-neutral-light);
+  --carbon-bg-hover: var(--primitive-neutral-400);
+  --carbon-layer-01: var(--semantic-surface-neutral-lightest);
+  --carbon-field: var(--semantic-surface-neutral-lightest);
+  
+  --carbon-text-primary: var(--semantic-text-neutral-darkest);
+  --carbon-text-secondary: var(--semantic-text-neutral-dark);
+  --carbon-text-placeholder: var(--primitive-neutral-500);
+  --carbon-text-on-color: #ffffff;
+  
+  --carbon-border-subtle: var(--semantic-surface-neutral);
+  --carbon-border-strong: var(--primitive-neutral-500);
+  
+  --carbon-interactive: var(--semantic-brand-neutral);
+  --carbon-interactive-transparent: rgba(38, 102, 245, 0.1);
+  
+  --carbon-support-error: var(--semantic-error-neutral);
+  --carbon-support-success: var(--semantic-success-neutral);
+  --carbon-support-warning: var(--semantic-warning-neutral);
+  --carbon-support-info: var(--semantic-brand-dark);
+}
+
+body {
+  font-family: var(--carbon-font-family);
+}
